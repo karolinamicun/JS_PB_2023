@@ -87,7 +87,7 @@ function checkSameCardsNumbers(myCards) {
 	} else if (maxSameCards === 3) {
 		//sprawdza czy jest jeszcze para poza trójką
 		for (let i = 0; i < sumSameCardsArray.length; i++) {
-			if (maxSameCards === sumSameCardsArray[i] - 1) {
+			if (sumSameCards[i] === 2) {
 				return 3.2;
 			}
 		}
@@ -137,7 +137,7 @@ function returnBestPokerHand() {
 	return 'error';
 }
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 3; i++) {
 	console.log(returnBestPokerHand());
 }
 console.log('_');
